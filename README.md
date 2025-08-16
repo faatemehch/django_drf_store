@@ -67,3 +67,17 @@ python manage.py runserver
 │   └── store/           # Product Order Cart models/views
 ├── manage.py
 └── requirements.txt
+
+
+## 🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
