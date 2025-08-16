@@ -56,21 +56,6 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-
-## 🏗️ Project Structure
-<!-- PROJECT_STRUCTURE_START -->
-.
-├── config/               # Project configuration
-│   ├── settings/       # Split settings
-│   └── urls.py         # Main URLs
-├── apps/
-│   ├── core/          # Authentication         
-│   └── store/           # Product Order Cart models/views
-├── manage.py
-└── requirements.txt
-
-<!-- PROJECT_STRUCTURE_END -->
-
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
 
