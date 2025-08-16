@@ -58,6 +58,7 @@ python manage.py runserver
 
 
 ## 🏗️ Project Structure
+<!-- PROJECT_STRUCTURE_START -->
 .
 ├── config/               # Project configuration
 │   ├── settings/       # Split settings
@@ -68,6 +69,7 @@ python manage.py runserver
 ├── manage.py
 └── requirements.txt
 
+<!-- PROJECT_STRUCTURE_END -->
 
 ## 🤝 Contributing
 Contributions are welcome! Please follow these steps:
