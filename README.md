@@ -1,30 +1,57 @@
-# Online Shopping Website - Django REST Framework Project
+# 🛍️ Online Shopping API - Django REST Framework
 
-## Overview
- ### This is a RESTful API for an online shopping website built with Django REST Framework. The project demonstrates my backend development skills and showcases my ability to create robust e-commerce APIs with features like product management, user authentication, order processing, and more.
+![Django REST Framework](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
-## Features
+A complete e-commerce backend API built with Django REST Framework, featuring JWT authentication, product management, shopping cart functionality, and order processing.
 
-### Product Management: CRUD operations for products with categories and filtering
+## ✨ Features
 
-### Shopping Cart: Users can add/remove items and manage quantities
+- **User System**:
+  - User profiles with order history
+  - Admin dashboard
 
-### Order Processing: Complete order lifecycle from creation to fulfillment
+- **Product Management**:
+  - CRUD operations for products
+  - Category system
+  - Advanced search & filtering
 
-### Search & Filtering: Advanced product search with filtering options
+- **Shopping Flow**:
+  - Cart management
+  - Checkout process
+  - Order tracking
 
-### Admin Dashboard: Powerful admin interface for managing the store
+## 🚀 Quick Start
 
-### API Documentation: Comprehensive documentation using Swagger/OpenAPI
+### Prerequisites
+- Python 3.9+
+- MySql
+- pip
 
-## Technologies Used
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/your-username/online-shop-api.git
+cd online-shop-api
 
-### Backend: Django, Django REST Framework
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# venv\Scripts\activate  # Windows
 
-### Database: mysql
+# Install dependencies
+pip install -r requirements.txt
 
+# Configure environment
+cp .env.example .env
+# Edit .env with your settings
 
+# Run migrations
+python manage.py migrate
 
-SimpleJWT for authentication
+# Create admin user
+python manage.py createsuperuser
 
-Django CORS Headers for cross-origin requests
+# Run development server
+python manage.py runserver
