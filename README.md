@@ -54,3 +54,16 @@ python manage.py createsuperuser
 
 # Run development server
 python manage.py runserver
+```
+
+
+## 🏗️ Project Structure
+.
+├── config/               # Project configuration
+│   ├── settings/       # Split settings
+│   └── urls.py         # Main URLs
+├── apps/
+│   ├── core/          # Authentication         
+│   └── store/           # Product Order Cart models/views
+├── manage.py
+└── requirements.txt
