@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r8xs3@%bid*q6(5$xo%f=0##n+w!vvqqb(r!z_ei9cecntez^m'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,7 +94,7 @@ DATABASES = {
         'NAME': 'store_drf',
         'HOST': 'localhost',
         'USER': 'root',
-        'PASSWORD': '22119674fch',
+        'PASSWORD': config('DATABASE_PASSWORD'),
     }
 }
 
